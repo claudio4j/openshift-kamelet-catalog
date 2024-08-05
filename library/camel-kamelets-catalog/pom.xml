@@ -92,7 +92,38 @@
             <version>${classgraph.version}</version>
         </dependency>
 
-
+        <!-- allows maven to download the artifacts -->
+        <dependency>
+            <!-- Quarkus default one is targeted for jdk8 -->
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>${version.com.microsoft.sqlserver.mssql-jdbc}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${version.org.apache.commons.commons-dbcp2}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.qpid</groupId>
+            <artifactId>qpid-jms-client</artifactId>
+            <version>${version.org.apache.qpid.qpid-jms-client}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${version.org.postgresql.postgresql}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazon.redshift</groupId>
+            <artifactId>redshift-jdbc42</artifactId>
+            <version>${version.com.amazon.redshift.redshift-jdbc42}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.mq</groupId>
+            <artifactId>com.ibm.mq.allclient</artifactId>
+            <version>${version.com.ibm.mq.com.ibm.mq.allclient}</version>
+        </dependency>
     </dependencies>
 
     <build>
